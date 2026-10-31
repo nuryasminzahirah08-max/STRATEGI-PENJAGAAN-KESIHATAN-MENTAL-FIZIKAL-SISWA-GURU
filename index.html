@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈 Nota Ringkas: Strategi Penjagaan Kesihatan Mental & Fizikal Siswa Guru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Canvas for Confetti -->
+    <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- STICKY NAVIGATION BAR                       -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">🌈 NotaRingkas</a>
+            <div class="nav-actions">
+                <button class="sound-toggle" id="soundToggle" title="Buka/Tutup Bunyi FX" aria-label="Toggle Sound">
+                    <span id="soundIcon">🔊</span>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#takrifan">🧠 Takrifan</a></li>
+                <li><a href="#teori">📚 Teori & Asas</a></li>
+                <li><a href="#strategi">⭐ 6 Strategi</a></li>
+                <li><a href="#game">🎮 Zon Game</a></li>
+                <li><a href="#penutup">💚 Penutup</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <header class="hero" id="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">TUGASAN 2 • PENGHASILAN PRODUK DIGITAL INTERAKTIF</div>
+            <h1 class="hero-title fade-in">
+                🌈 NOTA RINGKAS
+            </h1>
+            <p class="hero-subtitle fade-in">
+                Strategi Penjagaan Kesihatan Mental & Fizikal Siswa Guru
+            </p>
+            <div class="hero-cta fade-in">
+                <a href="#takrifan" class="btn btn-primary">Mulakan Penerokaan ✨</a>
+                <a href="#strategi" class="btn btn-secondary">Lihat 6 Strategi ⭐</a>
+                <a href="#game" class="btn btn-game">🎮 Main Game Sihat</a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,64 C360,120 720,0 1080,64 C1260,96 1380,80 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- BAHAGIAN 1: TAKRIFAN KESIHATAN              -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="section" id="takrifan">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-icon">🧠</span>
+                    <h2 class="section-title">Takrifan Kesihatan</h2>
+                    <p class="section-desc">Memahami dua dimensi utama kesihatan yang saling berkait.</p>
+                </div>
+
+                <div class="definition-grid">
+                    <!-- Kad Kesihatan Mental -->
+                    <div class="def-card def-card--mental fade-in">
+                        <div class="def-card__icon">🧠</div>
+                        <div class="def-card__num">1</div>
+                        <h3 class="def-card__title">Apakah maksud kesihatan mental?</h3>
+                        <div class="def-card__divider"></div>
+                        <p class="def-card__text">
+                            <strong>Kesihatan mental</strong> merujuk kepada keadaan kesejahteraan emosi, psikologi dan sosial seseorang yang mempengaruhi cara berfikir, mengawal emosi, menghadapi tekanan serta berinteraksi dengan orang lain.
+                        </p>
+                        <div class="def-card__tags">
+                            <span class="tag">Emosi</span>
+                            <span class="tag">Psikologi</span>
+                            <span class="tag">Sosial</span>
+                            <span class="tag">Kawalan Emosi</span>
+                        </div>
+                    </div>
+
+                    <!-- Kad Kesihatan Fizikal -->
+                    <div class="def-card def-card--fizikal fade-in">
+                        <div class="def-card__icon">💪</div>
+                        <div class="def-card__num">2</div>
+                        <h3 class="def-card__title">Apakah maksud kesihatan fizikal?</h3>
+                        <div class="def-card__divider"></div>
+                        <p class="def-card__text">
+                            <strong>Kesihatan fizikal</strong> merujuk kepada keadaan tubuh badan yang sihat dan berfungsi dengan baik untuk menjalankan aktiviti harian.
+                        </p>
+                        <div class="def-card__tags">
+                            <span class="tag">Tubuh Badan</span>
+                            <span class="tag">Kecergasan</span>
+                            <span class="tag">Aktiviti Harian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- BAHAGIAN 2: TEORI & ASAS KESIHATAN          -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="section section--alt" id="teori">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-icon">📚</span>
+                    <h2 class="section-title">3. 📚 Teori dan Asas Kesihatan</h2>
+                    <p class="section-desc">Tiga rujukan asas kesihatan antarabangsa sebagai panduan.</p>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="tabs fade-in">
+                    <div class="tab-nav">
+                        <button class="tab-btn active" data-tab="who">🌐 1. WHO</button>
+                        <button class="tab-btn" data-tab="wash">🧼 2. WASH</button>
+                        <button class="tab-btn" data-tab="sphere">🛡️ 3. Sphere Standards</button>
+                    </div>
+
+                    <div class="tab-panels">
+                        <!-- WHO -->
+                        <div class="tab-panel active" id="panel-who">
+                            <div class="theory-card">
+                                <div class="theory-card__header">
+                                    <span class="theory-card__emoji">🌐</span>
+                                    <div>
+                                        <div class="theory-source-badge">WHO | UNGIS</div>
+                                        <h3>1. WHO (World Health Organization)</h3>
+                                        <p class="theory-card__full">Pertubuhan Kesihatan Sedunia</p>
+                                    </div>
+                                </div>
+                                <div class="theory-card__body">
+                                    <div class="theory-card__section">
+                                        <h4>🎯 Fokus / Penekanan</h4>
+                                        <p>Menekankan kesihatan sebagai <strong>kesejahteraan fizikal, mental dan sosial</strong>, bukan sekadar bebas daripada penyakit.</p>
+                                    </div>
+                                    <div class="theory-card__section">
+                                        <h4>🎓 Aplikasi Siswa Guru</h4>
+                                        <p>Menjaga keseimbangan mental dan fizikal siswa guru.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- WASH -->
+                        <div class="tab-panel" id="panel-wash">
+                            <div class="theory-card">
+                                <div class="theory-card__header">
+                                    <span class="theory-card__emoji">🧼</span>
+                                    <div>
+                                        <div class="theory-source-badge">World AMR Awareness Week 2024</div>
+                                        <h3>2. WASH (Water, Sanitation and Hygiene)</h3>
+                                        <p class="theory-card__full">Air Bersih, Sanitasi dan Kebersihan Diri</p>
+                                    </div>
+                                </div>
+                                <div class="theory-card__body">
+                                    <div class="theory-card__section">
+                                        <h4>🎯 Fokus / Penekanan</h4>
+                                        <p>Memberi penekanan kepada <strong>air bersih, sanitasi dan kebersihan diri serta persekitaran</strong>.</p>
+                                    </div>
+                                    <div class="theory-card__section">
+                                        <h4>🎓 Aplikasi Siswa Guru</h4>
+                                        <p>Membasuh tangan, minum air bersih dan menjaga kebersihan tandas kampus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sphere -->
+                        <div class="tab-panel" id="panel-sphere">
+                            <div class="theory-card">
+                                <div class="theory-card__header">
+                                    <span class="theory-card__emoji">🛡️</span>
+                                    <div>
+                                        <div class="theory-source-badge">The Sphere Handbook - Sphere Association - knihobot.cz</div>
+                                        <h3>3. Sphere Standards</h3>
+                                        <p class="theory-card__full">Piawaian Minimum Bantuan Kemanusiaan</p>
+                                    </div>
+                                </div>
+                                <div class="theory-card__body">
+                                    <div class="theory-card__section">
+                                        <h4>🎯 Fokus / Penekanan</h4>
+                                        <p>Menetapkan <strong>piawaian minimum dalam bantuan kemanusiaan</strong>, termasuk aspek air, sanitasi, kebersihan dan kesihatan.</p>
+                                    </div>
+                                    <div class="theory-card__section">
+                                        <h4>🎓 Aplikasi Siswa Guru</h4>
+                                        <p>Mengutamakan persekitaran kampus yang bersih, selamat dan menyokong kesejahteraan.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion (Mobile-friendly alternative) -->
+                <div class="accordion fade-in">
+                    <div class="accordion-item">
+                        <button class="accordion-header active" data-accordion="who">
+                            <span>🌐 1. WHO (World Health Organization)</span>
+                            <span class="accordion-chevron">▼</span>
+                        </button>
+                        <div class="accordion-body open">
+                            <div class="theory-source-badge" style="margin-bottom: 12px;">WHO | UNGIS</div>
+                            <div class="theory-card__section">
+                                <h4>🎯 Fokus / Penekanan</h4>
+                                <p>Menekankan kesihatan sebagai <strong>kesejahteraan fizikal, mental dan sosial</strong>, bukan sekadar bebas daripada penyakit.</p>
+                            </div>
+                            <div class="theory-card__section">
+                                <h4>🎓 Aplikasi Siswa Guru</h4>
+                                <p>Menjaga keseimbangan mental dan fizikal siswa guru.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" data-accordion="wash">
+                            <span>🧼 2. WASH (Water, Sanitation and Hygiene)</span>
+                            <span class="accordion-chevron">▼</span>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="theory-source-badge" style="margin-bottom: 12px;">World AMR Awareness Week 2024</div>
+                            <div class="theory-card__section">
+                                <h4>🎯 Fokus / Penekanan</h4>
+                                <p>Memberi penekanan kepada <strong>air bersih, sanitasi dan kebersihan diri serta persekitaran</strong>.</p>
+                            </div>
+                            <div class="theory-card__section">
+                                <h4>🎓 Aplikasi Siswa Guru</h4>
+                                <p>Membasuh tangan, minum air bersih dan menjaga kebersihan tandas kampus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header" data-accordion="sphere">
+                            <span>🛡️ 3. Sphere Standards</span>
+                            <span class="accordion-chevron">▼</span>
+                        </button>
+                        <div class="accordion-body">
+                            <div class="theory-source-badge" style="margin-bottom: 12px;">The Sphere Handbook - Sphere Association - knihobot.cz</div>
+                            <div class="theory-card__section">
+                                <h4>🎯 Fokus / Penekanan</h4>
+                                <p>Menetapkan <strong>piawaian minimum dalam bantuan kemanusiaan</strong>, termasuk aspek air, sanitasi, kebersihan dan kesihatan.</p>
+                            </div>
+                            <div class="theory-card__section">
+                                <h4>🎓 Aplikasi Siswa Guru</h4>
+                                <p>Mengutamakan persekitaran kampus yang bersih, selamat dan menyokong kesejahteraan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- BAHAGIAN 3: 6 STRATEGI UTAMA                -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="section" id="strategi">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-icon">⭐</span>
+                    <h2 class="section-title">4. ⭐ Enam Strategi Utama Penjagaan Kesihatan</h2>
+                    <p class="section-desc">Tandakan amalan yang telah anda lakukan hari ini! ✅</p>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-wrapper fade-in">
+                    <div class="progress-label">
+                        <span>📊 Kemajuan Amalan Hari Ini</span>
+                        <span class="progress-count" id="progressCount">0 / 18</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+
+                <div class="strategy-grid">
+
+                    <!-- Strategi 1 -->
+                    <div class="strategy-card strategy-card--1 fade-in">
+                        <div class="strategy-card__header">
+                            <span class="strategy-card__number">01</span>
+                            <span class="strategy-card__emoji">🧘</span>
+                        </div>
+                        <h3 class="strategy-card__title">STRATEGI 1: Pengurusan tekanan dan emosi 🧘</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="1" data-item="1">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Melakukan teknik pernafasan dan meditasi.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="1" data-item="2">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengurus masa belajar dengan baik.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="1" data-item="3">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengelakkan beban tugasan pada saat akhir.</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Strategi 2 -->
+                    <div class="strategy-card strategy-card--2 fade-in">
+                        <div class="strategy-card__header">
+                            <span class="strategy-card__number">02</span>
+                            <span class="strategy-card__emoji">🏃</span>
+                        </div>
+                        <h3 class="strategy-card__title">STRATEGI 2: Aktiviti fizikal secara berkala 🏃</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="2" data-item="1">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Berjalan kaki atau berjoging.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="2" data-item="2">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Melakukan senaman ringan.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="2" data-item="3">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Menyertai aktiviti sukan kampus.</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Strategi 3 -->
+                    <div class="strategy-card strategy-card--3 fade-in">
+                        <div class="strategy-card__header">
+                            <span class="strategy-card__number">03</span>
+                            <span class="strategy-card__emoji">🥗</span>
+                        </div>
+                        <h3 class="strategy-card__title">STRATEGI 3: Pemakanan seimbang 🥗</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="3" data-item="1">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengambil makanan berkhasiat.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="3" data-item="2">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengutamakan buah-buahan dan sayur-sayuran.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="3" data-item="3">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengurangkan makanan segera dan minuman bergula</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Strategi 4 -->
+                    <div class="strategy-card strategy-card--4 fade-in">
+                        <div class="strategy-card__header">
+                            <span class="strategy-card__number">04</span>
+                            <span class="strategy-card__emoji">😴</span>
+                        </div>
+                        <h3 class="strategy-card__title">STRATEGI 4: Tidur dan rehat mencukupi 😴</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="4" data-item="1">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mendapatkan tidur sekitar 7–8 jam bagi kebanyakan orang dewasa.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="4" data-item="2">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengurangkan penggunaan telefon sebelum tidur.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="4" data-item="3">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mengamalkan jadual tidur yang konsisten</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Strategi 5 -->
+                    <div class="strategy-card strategy-card--5 fade-in">
+                        <div class="strategy-card__header">
+                            <span class="strategy-card__number">05</span>
+                            <span class="strategy-card__emoji">❤️</span>
+                        </div>
+                        <h3 class="strategy-card__title">STRATEGI 5: Sokongan sosial dan hubungan positif ❤️</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="5" data-item="1">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Berkongsi masalah dengan rakan dipercayai.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="5" data-item="2">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Mendapatkan khidmat kaunseling.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="5" data-item="3">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Membina hubungan baik dengan pensyarah dan rakan.</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Strategi 6 -->
+                    <div class="strategy-card strategy-card--6 fade-in">
+                        <div class="strategy-card__header">
+                            <span class="strategy-card__number">06</span>
+                            <span class="strategy-card__emoji">🧼</span>
+                        </div>
+                        <h3 class="strategy-card__title">STRATEGI 6: Kebersihan diri dan persekitaran 🧼</h3>
+                        <ul class="checklist">
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="6" data-item="1">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Membasuh tangan menggunakan sabun.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="6" data-item="2">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Minum air bersih secukupnya.</span>
+                                </label>
+                            </li>
+                            <li class="checklist-item">
+                                <label>
+                                    <input type="checkbox" class="habit-check" data-strategy="6" data-item="3">
+                                    <span class="checkmark"></span>
+                                    <span class="checklist-text">Memastikan bilik dan kawasan kampus bersih.</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- BAHAGIAN INTERAKTIF: ZON GAME KESIHATAN     -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="section section--game" id="game">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-icon">🎮</span>
+                    <h2 class="section-title">Zon Interaktif & Mini Game</h2>
+                    <p class="section-desc">Uji kefahaman anda sambil berehat dan segarkan minda dengan aktiviti gamifikasi interaktif ini!</p>
+                </div>
+
+                <!-- Game Switcher Tabs -->
+                <div class="game-tabs fade-in">
+                    <button class="game-tab-btn active" data-game="quiz">
+                        🏆 Cabaran Kuiz Sihat (5 Soalan)
+                    </button>
+                    <button class="game-tab-btn" data-game="zen">
+                        🧘 Zen Breath: Relaksasi 4-7-8
+                    </button>
+                </div>
+
+                <!-- Game 1: Kuiz Pantas Siswa Guru -->
+                <div class="game-panel active" id="game-quiz">
+                    <div class="quiz-container fade-in">
+                        <!-- Quiz Header -->
+                        <div class="quiz-header">
+                            <div class="quiz-stat">
+                                <span class="quiz-stat__label">Soalan</span>
+                                <span class="quiz-stat__value" id="quizCurrentQ">1/5</span>
+                            </div>
+                            <div class="quiz-stat">
+                                <span class="quiz-stat__label">Markah</span>
+                                <span class="quiz-stat__value quiz-stat__value--score" id="quizScore">0</span>
+                            </div>
+                            <div class="quiz-stat">
+                                <span class="quiz-stat__label">Streak</span>
+                                <span class="quiz-stat__value quiz-stat__value--streak" id="quizStreak">🔥 0</span>
+                            </div>
+                        </div>
+
+                        <!-- Progress Line -->
+                        <div class="quiz-progress-line">
+                            <div class="quiz-progress-fill" id="quizProgressFill" style="width: 20%;"></div>
+                        </div>
+
+                        <!-- Question Screen -->
+                        <div class="quiz-body" id="quizBody">
+                            <div class="quiz-badge" id="quizCategoryBadge">📚 Teori Kesihatan</div>
+                            <h3 class="quiz-question" id="quizQuestionText">Memuatkan soalan...</h3>
+                            <div class="quiz-options" id="quizOptions">
+                                <!-- Generated by JavaScript -->
+                            </div>
+                            <div class="quiz-feedback" id="quizFeedback" style="display: none;">
+                                <div class="quiz-feedback__icon" id="quizFeedbackIcon">✅</div>
+                                <div class="quiz-feedback__content">
+                                    <h4 id="quizFeedbackTitle">Tepat Sekali!</h4>
+                                    <p id="quizFeedbackText">Penerangan jawapan...</p>
+                                </div>
+                                <button class="btn btn-primary" id="quizNextBtn">Soalan Seterusnya ➔</button>
+                            </div>
+                        </div>
+
+                        <!-- Result Screen (hidden by default) -->
+                        <div class="quiz-result" id="quizResult" style="display: none;">
+                            <div class="quiz-result__trophy" id="quizResultTrophy">🏆</div>
+                            <h3 class="quiz-result__title" id="quizResultTitle">Tahniah Siswa Guru!</h3>
+                            <p class="quiz-result__subtitle" id="quizResultSubtitle">Anda menguasai pengetahuan kesihatan dengan cemerlang!</p>
+                            <div class="quiz-result__score-circle">
+                                <span class="quiz-result__score-num" id="quizFinalScore">100</span>
+                                <span class="quiz-result__score-label">Mata Terkumpul</span>
+                            </div>
+                            <div class="quiz-result__stats">
+                                <div class="result-badge">
+                                    <span>🎯 Ketepatan:</span>
+                                    <strong id="quizAccuracy">5 / 5</strong>
+                                </div>
+                                <div class="result-badge">
+                                    <span>🎖️ Pangkat:</span>
+                                    <strong id="quizRank">Juara Kesihatan Holistik</strong>
+                                </div>
+                            </div>
+                            <div class="quiz-result__actions">
+                                <button class="btn btn-primary" id="quizRestartBtn">🔄 Main Semula</button>
+                                <a href="#strategi" class="btn btn-secondary">⭐ Ulang Kaji 6 Strategi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game 2: Zen Breath Simulator (4-7-8) -->
+                <div class="game-panel" id="game-zen">
+                    <div class="zen-container fade-in">
+                        <div class="zen-header">
+                            <span class="zen-badge">🧘 Strategi 1: Pengurusan Tekanan &amp; Emosi</span>
+                            <h3>Simulator Pernafasan Tenang 4-7-8</h3>
+                            <p>Tarik nafas (4 saat), tahan (7 saat), dan hembus perlahan (8 saat) untuk meredakan ketegangan fizikal dan emosi sebelum atau selepas belajar.</p>
+                        </div>
+
+                        <div class="zen-visual-wrapper">
+                            <div class="zen-ring zen-ring--outer"></div>
+                            <div class="zen-ring zen-ring--middle"></div>
+                            <div class="zen-orb" id="zenOrb">
+                                <div class="zen-orb__content">
+                                    <span class="zen-phase-icon" id="zenPhaseIcon">🌬️</span>
+                                    <div class="zen-phase-title" id="zenPhaseTitle">Bersedia...</div>
+                                    <div class="zen-phase-timer" id="zenPhaseTimer">0s</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="zen-controls">
+                            <button class="btn btn-primary btn-zen-start" id="zenStartBtn">
+                                <span id="zenBtnText">▶️ Mula Latihan Pernafasan</span>
+                            </button>
+                            <div class="zen-cycles" id="zenCycles">
+                                <span>Kitaran Selesai: <strong id="zenCycleCount">0</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════ -->
+        <!-- BAHAGIAN 4: PENUTUP & MESEJ INSPIRASI       -->
+        <!-- ═══════════════════════════════════════════ -->
+        <section class="section section--alt" id="penutup">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-icon">💚</span>
+                    <h2 class="section-title">Penutup</h2>
+                    <p class="section-desc">Kesejahteraan holistik untuk membentuk guru yang sihat dan berkualiti.</p>
+                </div>
+
+                <!-- Kad Rumusan Penutup Lengkap -->
+                <div class="quote-card fade-in">
+                    <div class="quote-card__icon">💚</div>
+                    <h3 class="quote-card__title">Penutup</h3>
+                    <div class="quote-card__divider"></div>
+                    <p class="quote-card__paragraph">
+                        Kesimpulannya, penjagaan kesihatan mental dan fizikal merupakan aspek penting dalam kehidupan setiap siswa guru bagi memastikan kesejahteraan diri sentiasa terpelihara. Melalui amalan gaya hidup sihat, pengurusan tekanan yang baik, pemakanan seimbang, tidur mencukupi serta sokongan sosial, siswa guru dapat melahirkan diri yang lebih sihat, cergas dan berfikiran positif.
+                    </p>
+                    <blockquote class="quote-card__text">
+                        "Oleh itu, kesihatan diri perlu dijaga secara seimbang kerana guru yang sihat mampu membentuk generasi yang lebih berkualiti." 🌈💚
+                    </blockquote>
+                    <div class="quote-card__decoration">
+                        <span>🌱</span><span>💚</span><span>✨</span>
+                    </div>
+                </div>
+
+                <!-- Refleksi / Azam Card -->
+                <div class="azam-card fade-in">
+                    <div class="azam-card__header">
+                        <span class="azam-card__emoji">✍️</span>
+                        <h3>Kad Refleksi Interaktif</h3>
+                        <p>Tuliskan satu azam kesihatan kendiri anda di bawah:</p>
+                    </div>
+                    <div class="azam-card__form">
+                        <textarea 
+                            id="azamInput" 
+                            class="azam-input" 
+                            placeholder="Contoh: Saya berazam untuk bersenam sekurang-kurangnya 30 minit setiap hari..." 
+                            rows="4"
+                        ></textarea>
+                        <button class="btn btn-primary btn-save" id="saveAzam">
+                            💾 Simpan Azam
+                        </button>
+                    </div>
+                    <div class="azam-card__saved" id="savedAzam" style="display:none;">
+                        <div class="saved-label">🌟 Azam Tersimpan Anda:</div>
+                        <p class="saved-text" id="savedText"></p>
+                        <small class="saved-date" id="savedDate"></small>
+                        <button class="btn btn-outline btn-reset" id="resetAzam">🗑️ Padam & Tulis Semula</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER                                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <p>🌈 Nota Ringkas Digital &amp; Kad Pembelajaran Hub</p>
+            <p class="footer-sub">Tugasan 2 • Penghasilan Produk Digital Interaktif • 2026</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
